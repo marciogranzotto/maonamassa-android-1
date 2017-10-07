@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="br.com.maonamassa.primeiroapp.MainActivity">
 
     <TextView
         android:id="@+id/myTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="Ola mundo"/>
+        android:text="Ola mundo"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/myButton"
@@ -22,6 +21,10 @@
         android:layout_height="wrap_content"
         android:text="clique em mim"/>
 
-
+    <Button
+        android:id="@+id/botaoMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique para diminuir"/>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package br.com.maonamassa.primeiroapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Button
@@ -13,18 +14,24 @@ class MainActivity: AppCompatActivity() {
 
         val button = findViewById(R.id.myButton) as Button
         val textView = findViewById(R.id.myTextView) as TextView
+        val botaoDeMenos = findViewById(R.id.botaoMenos) as Button
 
         var numeroDeVezes = 0
 
         button.setOnClickListener {
-            numeroDeVezes++
-            textView.text = "o botão foi clicado ${numeroDeVezes} vezes"
+            val intent = Intent(this, SegundaActivity::class.java)
+            startActivity(intent)
         }
 
         button.setOnLongClickListener {
-            numeroDeVezes--
+            numeroDeVezes++
             textView.text = "o botão foi clicado ${numeroDeVezes} vezes"
             true
+        }
+
+        botaoDeMenos.setOnClickListener {
+            numeroDeVezes--
+            textView.text = "o botão foi clicado ${numeroDeVezes} vezes"
         }
     }
 }
