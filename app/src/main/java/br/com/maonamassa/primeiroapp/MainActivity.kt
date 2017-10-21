@@ -19,7 +19,7 @@ class MainActivity: AppCompatActivity() {
         var numeroDeVezes = 0
 
         button.setOnClickListener {
-            val intent = Intent(this, SegundaActivity::class.java)
+            val intent = Intent(this, ListaActivity::class.java)
             startActivity(intent)
         }
 

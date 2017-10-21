@@ -20,4 +20,12 @@
         android:layout_marginLeft="40dp"
         android:text="segundo texto"/>
 
+    <Button
+        android:id="@+id/botao"
+        android:text="Mudar textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#22FFFF"/>
+
 </RelativeLayout>
